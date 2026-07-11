@@ -150,3 +150,36 @@ topButton.addEventListener("click",()=>{
     });
 
 });
+
+document.querySelectorAll(".servizi-slider").forEach(slider => {
+
+    new Swiper(slider, {
+        loop: true,
+
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
+
+        pagination: {
+            el: slider.querySelector(".swiper-pagination"),
+            clickable: true
+        }
+    });
+
+});
+window.addEventListener("scroll",()=>{
+
+    const header=document.querySelector("header");
+
+    if(window.scrollY>80){
+
+        header.classList.add("scrolled");
+
+    }else{
+
+        header.classList.remove("scrolled");
+
+    }
+
+});

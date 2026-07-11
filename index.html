@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -29,14 +30,15 @@
 
         <a href="index.html" class="logo">
             <img src="img/logo.png" alt="Metal Mucciolo">
-        </a>
+			<span>METAL MUCCIOLO</span>
+		</a>
 
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">Chi siamo</a></li>
                 <li><a href="#services">Servizi</a></li>
-                <li><a href="#gallery">Lavori</a></li>
+                <li><a href="#works">Lavori</a></li>
                 <li><a href="#contact">Contatti</a></li>
             </ul>
         </nav>
@@ -145,16 +147,56 @@
 		<div class="cards" >
 		
 			<div class="card">
+
+				<div class="swiper servizi-slider">
 			
-				<img src="img/cancelli.png" data-aos="zoom-in">
-				
+					<div class="swiper-wrapper">
+			
+						<div class="swiper-slide">
+							<img src="img/cancelli.png" alt="Cancello 1">
+						</div>
+			
+						<div class="swiper-slide">
+							<img src="img/cancelli.png" alt="Cancello 2">
+						</div>
+			
+						<div class="swiper-slide">
+							<img src="img/cancelli3.jpg" alt="Cancello 3">
+						</div>
+			
+					</div>
+			
+					<div class="swiper-pagination"></div>
+			
+				</div>
+			
 				<h3>Cancelli</h3>
 			
 			</div>
 		
 			<div class="card">
 			
-				<img src="img/ringhiere.png" data-aos="zoom-in">
+				<div class="swiper servizi-slider">
+			
+					<div class="swiper-wrapper">
+			
+						<div class="swiper-slide">
+							<img src="img/ringhiere.png" alt="Ringhiera 1">
+						</div>
+			
+						<div class="swiper-slide">
+							<img src="img/ringhiere2.png" alt="Ringhiera 2">
+						</div>
+			
+						<div class="swiper-slide">
+							<img src="img/ringhiere3.png" alt="Ringhiera 3">
+						</div>
+			
+					</div>
+			
+					<div class="swiper-pagination"></div>
+			
+				</div>
 				
 				<h3>Ringhiere</h3>
 			
@@ -162,7 +204,27 @@
 		
 			<div class="card">
 			
-				<img src="img/porte.png" data-aos="zoom-in">
+				<div class="swiper servizi-slider">
+			
+					<div class="swiper-wrapper">
+			
+						<div class="swiper-slide">
+							<img src="img/porte.png" alt="Porte 1">
+						</div>
+			
+						<div class="swiper-slide">
+							<img src="img/porte2.png" alt="Porte 2">
+						</div>
+			
+						<div class="swiper-slide">
+							<img src="img/porte3.png" alt="Porte 3">
+						</div>
+			
+					</div>
+			
+					<div class="swiper-pagination"></div>
+			
+				</div>
 				
 				<h3>Porte in ferro</h3>
 			
@@ -170,7 +232,27 @@
 		
 			<div class="card">
 			
-				<img src="img/carpenteria.png" data-aos="zoom-in">
+				<div class="swiper servizi-slider">
+			
+					<div class="swiper-wrapper">
+			
+						<div class="swiper-slide">
+							<img src="img/carpenteria.png" alt="Carpenteria 1">
+						</div>
+			
+						<div class="swiper-slide">
+							<img src="img/carpenteria2.png" alt="Carpenteria 2">
+						</div>
+			
+						<div class="swiper-slide">
+							<img src="img/cartpenteria3.png" alt="Carpenteria 3">
+						</div>
+			
+					</div>
+			
+					<div class="swiper-pagination"></div>
+			
+				</div>
 				
 				<h3>Carpenteria Metallica</h3>
 			
@@ -218,8 +300,31 @@ Vedi tutti
 
 </section>
 
-<!-- FOOTER -->
+<!--MAP-->
 
+<section class="map-section">
+
+    <div class="container">
+
+        <span class="section-title">DOVE SIAMO</span>
+
+        <h2>Vieni a trovarci</h2>
+
+        <p>
+            C.da Tempa delle Monache<br>
+            84049 Castel San Lorenzo (SA)
+        </p>
+
+    </div>
+
+    <iframe
+        src="https://www.google.com/maps/@40.4222728,15.2226067,146a,35y,288.17h/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D"
+        loading="lazy"
+        allowfullscreen>
+    </iframe>
+
+</section>
+<!-- FOOTER -->
 <footer id="contact">
 
 	<div class="container footer-grid">
@@ -343,9 +448,10 @@ Vedi tutti
 
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 <script src="js/script.js"></script>
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
 <script>
 AOS.init({
     duration: 800,
