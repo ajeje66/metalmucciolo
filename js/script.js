@@ -26,26 +26,6 @@ window.addEventListener("scroll", () => {
 
 
 /*=================================
-MENU MOBILE
-=================================*/
-
-const menuButton = document.querySelector(".menu-toggle");
-const nav = document.querySelector("nav");
-
-if(menuButton){
-
-    menuButton.addEventListener("click",()=>{
-
-        nav.classList.toggle("active");
-
-        menuButton.classList.toggle("open");
-
-    });
-
-}
-
-
-/*=================================
 ANIMAZIONE SCROLL
 =================================*/
 
@@ -181,5 +161,39 @@ window.addEventListener("scroll",()=>{
         header.classList.remove("scrolled");
 
     }
+
+});
+
+
+const menuButton = document.querySelector(".menu-toggle");
+const nav = document.querySelector("nav");
+
+menuButton.addEventListener("click", () => {
+
+    console.log("CLICK");
+
+    nav.classList.toggle("active");
+
+});
+
+document.addEventListener("click", (event) => {
+
+    const clickDentroMenu = nav.contains(event.target);
+    const clickSulPulsante = menuButton.contains(event.target);
+
+    if (!clickDentroMenu && !clickSulPulsante) {
+        nav.classList.remove("active");
+        menuButton.classList.remove("open");
+    }
+
+});
+document.querySelectorAll("nav a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        nav.classList.remove("active");
+        menuButton.classList.remove("open");
+
+    });
 
 });
