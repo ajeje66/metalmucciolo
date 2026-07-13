@@ -1355,7 +1355,7 @@ header.scrolled{
 .project-card img{
     width:420px;
     height:300px;
-    object-fit:cover;
+    object-fit:contain;
     border-radius:10px;
     box-shadow:0 10px 25px rgba(0,0,0,.15);
 }
