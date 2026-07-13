@@ -1340,3 +1340,125 @@ header.scrolled{
     }
 
 }
+.projects{
+    padding:100px 0;
+    background:#181818;
+}
+
+.project-card{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    margin-top:60px;
+}
+
+.project-card img{
+    width:420px;
+    height:300px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.project-info{
+    flex:1;
+}
+
+.project-info h3{
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+.project-info p{
+    line-height:1.8;
+    color:#555;
+}
+.project-card.reverse{
+    flex-direction:row-reverse;
+}
+/* ==========================
+   RESPONSIVE - REALIZZAZIONI
+========================== */
+
+@media screen and (max-width: 992px){
+
+    .project-card,
+    .project-card.reverse{
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 50px;
+    }
+
+    .project-card img{
+        width: 100%;
+        height: 300px;
+    }
+
+    .project-info{
+        width: 100%;
+        text-align: center;
+    }
+
+    .project-info h3{
+        font-size: 1.8rem;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    .projects{
+        padding: 70px 20px;
+    }
+
+    .project-card{
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0,0,0,.12);
+    }
+
+    .project-card img{
+        width: 100%;
+        height: 240px;
+        object-fit: contain;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .project-info{
+        padding: 25px;
+        text-align: left;
+    }
+
+    .project-info h3{
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .project-info p{
+        font-size: .95rem;
+        line-height: 1.7;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+
+    .project-card img{
+        height: 200px;
+    }
+
+    .project-info{
+        padding: 20px;
+    }
+
+    .project-info h3{
+        font-size: 1.3rem;
+    }
+
+    .project-info p{
+        font-size: .9rem;
+    }
+
+}
