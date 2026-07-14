@@ -749,11 +749,6 @@ footer{
 
 @media(max-width:992px){
 
-nav{
-
-    display:none;
-
-}
 
 .hero{
 
@@ -1163,7 +1158,6 @@ header.scrolled{
 
 .card:hover{
     transform: translateY(-8px);
-	cursor: default;
 }
 
 .card img{
@@ -1218,7 +1212,7 @@ header.scrolled{
     cursor:pointer;
 }
 
-@media (max-width:768px){
+@media (max-width:823px){
 
     nav{
         display:none;
@@ -1229,7 +1223,7 @@ header.scrolled{
     }
 
 }
-@media (max-width:768px){
+@media (max-width:823px){
 
     nav{
         display:none;
@@ -1412,7 +1406,6 @@ header.scrolled{
     }
 
     .project-card{
-        background: #fff;
         border-radius: 12px;
         overflow: hidden;
         box-shadow: 0 10px 25px rgba(0,0,0,.12);
